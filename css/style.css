@@ -109,7 +109,7 @@ img{
   text-align: center;
   color: var(--dark);
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 14px;
   box-shadow: var(--shadow);
   overflow:hidden;
 }
@@ -280,6 +280,13 @@ footer{
   .margin1 img{
     margin: 2px;
   }
+  .box{
+      padding: 0;
+      overflow: hidden;}
+
+      .info img{
+        float: left;
+      }
 }
 
 @media(max-width: 600px){
@@ -298,4 +305,11 @@ footer{
     float: none;
     width: 95%;
     margin:auto;}
+  .box{
+      padding: 0;
+      overflow: hidden;}
+
+      .info img{
+        float: left;
+      }
 }
