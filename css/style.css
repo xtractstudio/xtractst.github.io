@@ -57,7 +57,7 @@ body{
 
 .Gallery img{
   width: 430px;
-  padding: 4px;
+  padding: 12px;
   transition: 1s;
 }
 
@@ -288,13 +288,10 @@ footer{
         float: left;
         min-width: 100px;
       }
-      .Gallery img{
-        width: auto;
-        padding: 2px;
-      }
+
 }
 
-@media(min-width: 100px)
+@media(min-width: 400px)
   .top-container{
     grid-template-areas: 'showcase'
     'top-box-a' 'top-box-b';
@@ -306,10 +303,7 @@ footer{
   .margin1 img{
     margin-top: 5px;
   }
-  .box2 img{
-    float: none;
-    width: 95%;
-    margin:auto;}
+  
   .box{
       padding: 0;
       overflow: hidden;}
@@ -318,8 +312,5 @@ footer{
         float: left;
         min-width: 100px;
       }
-      .Gallery img{
-        width: auto;
-        padding: 2px;
-      }
+
 }
