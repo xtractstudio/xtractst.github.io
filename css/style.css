@@ -286,6 +286,11 @@ footer{
 
       .info img{
         float: left;
+        min-width: 100px;
+      }
+      .Gallery img{
+        width: auto;
+        padding: 2px;
       }
 }
 
@@ -311,5 +316,10 @@ footer{
 
       .info img{
         float: left;
+        min-width: 100px;
+      }
+      .Gallery img{
+        width: auto;
+        padding: 2px;
       }
 }
