@@ -27,6 +27,8 @@ header{
     margin-top: 8px;
     margin-left: 8px;
     margin-right: 8px;
+    width: 50%;
+    padding: 10px;
   }
 
   .icons1 img{
@@ -281,6 +283,10 @@ footer{
   .Gallery img{
     width: 95%;
   }
+  .margin1 img{
+    width: 70%;
+    padding: 10px;
+  }
   .info {
     grid-template-columns: 1fr;
   }
@@ -317,8 +323,23 @@ footer{
   padding: 0px;
   margin: 25px;
 }
+.margin1 img{
+  width: 60%;
+  padding: 10px;
 }
-
+}
+@media(max-width: 600px){
+  .margin1 img{
+    width: 70%;
+    padding: 10px;
+  }
+}
+@media(max-width: 500px){
+  .margin1 img{
+    width: 50%;
+    padding: 10px;
+  }
+}
 @media(max-width: 400px){
   .top-container{
     grid-template-areas: 'showcase'
@@ -326,6 +347,10 @@ footer{
   }
   .showcase h1{
     font-size: 45px;
+  }
+  .margin1 img{
+    width: 50%;
+    padding: 10px;
   }
   .main-nav ul{
     grid-template-columns: 1fr;
