@@ -213,6 +213,7 @@ img{
     text-align: justify;
     color: #000000;
     vertical-align: middle;
+    font-size: 18px;
     }
 
 .box2 img{
@@ -258,6 +259,14 @@ footer{
   padding: .1rem;
   }
 
+  .box p{
+    font-size: 18px;
+      }
+  .info p{
+    font-size: 18px;
+      }
+
+
 /*Media Queries*/
 
 @media(max-width: 800px){
@@ -268,11 +277,7 @@ footer{
 
   .showcase h1{
     font-size: 3.5rem;
-    color: #f01888;
-  }
-  .main-nav ul{
-    grid-template-columns: 1fr;
-  }
+    }
   .Gallery img{
     width: 95%;
   }
@@ -298,6 +303,9 @@ footer{
       .box img{
         width: 70%;
       }
+      .box p{
+        font-size: 18px;
+          }
 
 }
 
@@ -317,7 +325,10 @@ footer{
     'top-box-a' 'top-box-b';
   }
   .showcase h1{
-    color: #2bd922;
+    font-size: 45px;
+  }
+  .main-nav ul{
+    grid-template-columns: 1fr;
   }
   .wrapper {
     margin: 20px;
@@ -344,6 +355,13 @@ footer{
   .showcase {
       margin: 0px;
       padding:0px;
+      }
+
+  .box h3{
+    font-size: 25px;
+      }
+  .box p{
+    font-size: 18px;
       }
 
 }
