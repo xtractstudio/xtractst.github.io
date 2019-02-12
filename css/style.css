@@ -136,7 +136,7 @@ img{
   background: url(../img/showcase2.jpg);
   background-size: cover;
   background-position: center;
-  padding: 3rem;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,7 +190,7 @@ img{
 .boxes{
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
 }
 
 .boxes1{
@@ -231,14 +231,13 @@ img{
 
 /*info*/
 .info{
-  background: var(--primary);
-  box-shadow: var(--shadow);
+  background: #fff;
+  box-shadow: #fff;
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(2, 1fr);
-  padding: 3rem;
-  overflow: hidden;
-}
+  padding:20px;
+  }
 
 /*portfolio*/
 .portfolio{
@@ -271,12 +270,21 @@ footer{
 
 /*Media Queries*/
 
+@media(max-width: 1100px){
+  .boxes{
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+}
+
+
 @media(max-width: 800px){
   .top-container{
     grid-template-areas: 'showcase showcase'
     'top-box-a top-box-b';
   }
-
+  .boxes{
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
   .showcase h1{
     font-size: 3.5rem;
     }
@@ -299,48 +307,77 @@ footer{
     margin: 2px;
   }
   .box{
-      padding: 0;
-      overflow: hidden;}
+    padding: 0;
+    overflow: hidden;}
 
-      .info img{
-        float: left;
-        min-width: 100px;
-      }
-      .box img{
-        width: 70%;
-      }
-      .box p{
-        font-size: 18px;
-          }
-
+  .info img{
+    float: left;
+    min-width: 100px;
+  }
+  .box img{
+    width: 70%;
+  }
+  .box p{
+    font-size: 18px;
+  }
 }
+
 
 @media(max-width: 700px){
   .box img{
-  width: 50%;
+    width: 50%;
+  }
+  .wrapper{
+    padding: 0px;
+    margin: 25px;
+  }
+  .margin1 img{
+    width: 60%;
+    padding: 10px;
+  }
+  .box2 img{
+    width: 100%;
+  }
 }
-.wrapper{
-  padding: 0px;
-  margin: 25px;
-}
-.margin1 img{
-  width: 60%;
-  padding: 10px;
-}
-}
+
+
 @media(max-width: 600px){
   .margin1 img{
     width: 70%;
     padding: 10px;
   }
+  .box2 img{
+    width: 100%;
+  }
+  .main-nav ul{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
+
+
 @media(max-width: 500px){
   .margin1 img{
     width: 50%;
     padding: 10px;
   }
+  .box img{
+    width: 50%;
+  }
+
+  .boxes{
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
+  .top-box .price{
+    font-size: 30px;
+  }
 }
+
+
 @media(max-width: 400px){
+  .boxes{
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+  }
   .top-container{
     grid-template-areas: 'showcase'
     'top-box-a' 'top-box-b';
@@ -351,42 +388,43 @@ footer{
   .margin1 img{
     width: 50%;
     padding: 10px;
+    margin-top: 5px;
   }
+  .info p,h2{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
   .main-nav ul{
     grid-template-columns: 1fr;
   }
+
   .wrapper {
     margin: 20px;
     float: none;
   }
-  .margin1 img{
-    margin-top: 5px;
-  }
 
   .box{
     overflow: hidden;
-    padding: 8px;}
-
-  .info{
-      margin: 0px;
-      padding: 8px;
-      }
-
-  .info img{
-      float: none;
-      min-width: 100px;
-      }
-
+    padding: 8px;
+  }
   .showcase {
       margin: 0px;
       padding:0px;
-      }
-
+  }
   .box h3{
     font-size: 25px;
-      }
+  }
   .box p{
     font-size: 18px;
-      }
-
+  }
+  .icons1 h2{
+    font-size: 20px;
+  }
+  .box2 img{
+    width: 100%;
+  }
+  .box img{
+    width: 75%;
+  }
 }
